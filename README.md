@@ -30,13 +30,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` executes an anonymous function that iterates on each individual element of an array. 
+
+Whereas `.map` is an array method that returns a new array after calling an anonymous function to manipulate each element on the old array.  
+
 2. What is the difference between a function and a method?
+
+A method is a function that is implicitly binded, or can only be called after referencing the object/class that the function belongs to.
+
+A function can be anonymous, bounded or not bounded, to an object. 
 
 3. What is closure?
 
+Closure controls scope of function execution & local variables. In other words,
+local variables & or local functions within a larger parent function / object
+cannot be utilized outside the function - controlling access & restricting unintended
+manipulation of the function/object. 
+
 4. Describe the four rules of the 'this' keyword.
 
+The meaning of the `.this` keyword is highly dependent on where it is placed.
+The `.this` keyword references the execution scope/context of a function/object.
+
+- When `.this` is inside a global function, `.this` is a pointer to the window object.
+- When `.this` is inside a constructor function, `.this` is a pointer to the local object that has been created.
+- When `.this` is implicitly binded, `.this` notation references the object scope in which the function is operating on. 
+- When `.this` is explicitly binded, `.this` is referencing the object & its respective properties that is overriding another object, for the purposes of 
+borrowing - at one moment in time - another object's methods & its properties
+to perform programming logic.
+
 5. Why do we need super() in an extended class?
+
+Super allows children classes & its properties to override parent class property data, and the property data that the parent methods use. 
+
+In other words, it allows the children of a parent class to use parent class methods & bind children property data to parent class data.  
 
 ## Project Set up
 
